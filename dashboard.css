@@ -1,0 +1,111 @@
+.navbar ul{
+    list-style-type: none;
+    background-color: #7c3f00;
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    font-size: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+
+.navbar a:hover{
+    background-color: #633200;
+}
+
+.navbar li{
+    float: left;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fcf3e9;
+}
+
+img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border-width: 5%;
+    border: 5px solid #472A28;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2{
+    text-align: center;
+}
+
+h3{
+    font-weight: bold;
+    color: #5A4D41;
+}
+
+#classlink{
+    margin-top: 5px;
+}
+
+#history{
+    margin-top: 5px;
+}
+
+#spanish{
+    margin-top: 5px;
+}
+
+#lit{
+    margin-top: 5px;
+}
+
+#healthcare{
+    margin-top: 5px;
+}
+
+#geometry{
+    margin-top: 5px;
+}
+
+#ghealth{
+    margin-top: 5px;
+}
+
+a[href="https://myapps.classlink.com/home"]{
+    color: blue;
+}
+
+a[href="https://fultonschools.class.com/teams"]{
+    color: blue;
+}
+
+a[href="https://fultonschools.instructure.com/courses/470167/modules"]{
+    color: blue;
+}
+
+a[href="https://fultonvirtual.instructure.com/courses/1228/modules"]{
+    color: blue;
+}
+
+a[href="https://fultonschools.instructure.com/courses/470579/modules"]{
+    color: blue;
+}
+
+a[href="https://fultonschools.instructure.com/courses/470626/modules"]{
+    color: blue;
+}
+
+a[href="https://fultonschools.instructure.com/courses/469481/modules"]{
+    color: blue;
+}
+
+a[href="https://fultonvirtual.instructure.com/courses/973/modules"]{
+    color: blue;
+}
