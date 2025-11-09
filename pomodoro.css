@@ -44,6 +44,37 @@ body{
     border-radius: 25px;
 }
 
+.container{
+    font-family: monospace;
+    text-align: center;
+}
+
+.button-container{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.pomodoro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+    }
+
+.pomodoro::before{
+    content: "";
+    position: absolute;
+    border: 10px solid #472A28;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
 img{
     width: 200px;
     height: 200px;
