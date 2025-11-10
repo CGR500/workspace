@@ -1,91 +1,150 @@
-.navbar ul{
-    list-style-type: none;
-    background-color: #7c3f00;
-    padding: 0px;
-    margin: 0px;
-    margin-bottom: 10px;
-    overflow: hidden;
-    font-size: 20px;
-    font-weight: bold;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-.navbar a{
-    color: white;
-    text-decoration: none;
-    padding: 15px;
-    display: block;
+body {
+    background-color: #1e213f;
+    color: #d7e0ff;
+}
+
+.container {
     text-align: center;
+    width: 100%;
+    padding: 10px 0;
 }
 
-.navbar a:hover{
-    background-color: #633200;
+.timer {
+    display: inline-block;
+    padding: 10px;
+    width: 600ps;
+    box-sizing: border-box;
 }
 
-.navbar li{
-    float: left;
-}
-
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #fcf3e9;
-}
-
-.rectangle{
-    width: fit-content;
-    height: fit-content;
-    padding: 20px;
-    background-color: white;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    border-width: 5%;
-    border: 2px solid #472A28;
-    border-radius: 25px;
-}
-
-.container{
-    font-family: monospace;
+main {
+    width: 25rem;
+    height: 25rem;
+    border-radius: 50%;
     text-align: center;
+    margin: 0 auto;
+    margin-bottom: 2rem;
 }
 
-.button-container{
+h1 {
+    font-size: 2rem;
+    margin: 20px auto;
+}
+
+.button-container {
     margin-top: 20px;
     display: flex;
     justify-content: center;
 }
 
-.pomodoro{
+.pomodoro {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    height: 100%;
     position: relative;
-    margin: 10px;
-    padding: 5px;
+    margin: 2.5rem 0;
     text-align: center;
-    }
+    border-radius: 50%;
+    background: #151932;
+    box-shadow: 20px 20px 42px #0e1021, -20px -20px 42px #1c2244;
+}
 
-.pomodoro::before{
+.pomodoro::before {
     content: "";
     position: absolute;
-    border: 10px solid #472A28;
+    border: 10px solid royalblue;
     border-radius: 50%;
-    width: 200px;
-    height: 200px;
+    width: 22rem;
+    height: 22rem;
 }
 
-img{
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    border-width: 5%;
-    border: 5px solid #472A28;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.time {
+    font-size: 5rem !important;
+    margin: 20px auto;
 }
 
-h2{
+.button-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    background-color: #2e325a;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    transition: all .2s ease-in;
+}
+
+.button.active, .button:hover {
+    background-color: #020323; 
+}
+
+.hidden {
+    display: flex;
+}
+
+.timer-display {
+    font-size: 5rem;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+#start, #stop {
+    background-color: #2e325a;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    transition: all .2s ease-in;
+}
+
+#stop:hover {
+    background-color: tomato;
+}
+
+#start:hover {
+    background-color: #219a52;
+}
+
+#timer-message {
+    color: white;
+    background-color: tomato;
+    display: none;
+    padding: .5rem;
+    font-size: 1rem;
     text-align: center;
+    border-radius: 1rem;
+}
+
+/* Responsiveness */
+
+@media screen and (min-width: 320px) and (max-width: 600px) {
+    .container {
+        transform: scale(0.9)
+    }
+
+    .timer {
+        width: 500px;
+    }
 }

@@ -1,50 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=deivce-width, initial-scale=1.0">
-        <link rel="stylesheet" href="pomodoro.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-        <title>Pomodoro</title>
-    </head>
-    <body>
-        <nav class="navbar">
-            <ul>
-                <li id="dashboard"><a href="dashboard.html" target="_blank" rel="noopener">Dashboard</a></li>
-                <li id="grades"><a href="grades.html" target="_blank" rel="noopener">Grades</a></li>
-                <li id="pomodoro"><a href="pomodoro.html" target="_blank" rel="noopener">Pomodoro</a></li>
-            </ul>
-        </nav>
-        
-        <div class="rectangle">
-            <img src="data:image/jpeg;base64,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">
-            <h2>Set a Pomodoro Timer!</h2>
-            <p>Here is some really long text that I'm just going to put here to see how it looks.</p>
-            <div class="container">
-                <div class="button-container">
-                    <button class="button" id="pomodoro-session">Pomodoro</button>
-                    <button class="button" id="short-break">Short Break</button>
-                    <button class="button" id="long-break">Long Break</button>
-                </div>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <title>Pomodoro Timer | Focus</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+
+    <div id="timer-message">Please select a timer before starting.</div>
+
+    <div class="container">
+        <div class="timer">
+            <h1><i class="bi bi-alarm"></i> Pomodoro Timer</h1>
+
+            <div class="button-container">
+                <button class="button" id="pomodoro-session">Pomodoro</button>
+                <button class="button" id="short-break">Short Break</button>
+                <button class="button" id="long-break">Long Break</button>
+            </div>
+
+            <main>
                 <div class="pomodoro">
                     <div id="pomodoro-timer" class="timer-display" data-duration="25:00">
                         <h1 class="time">25:00</h1>
                     </div>
+
                     <div id="short-timer" class="timer-display" data-duration="5:00">
                         <h1 class="time">5:00</h1>
                     </div>
+
                     <div id="long-timer" class="timer-display" data-duration="10:00">
                         <h1 class="time">10:00</h1>
                     </div>
+
                 </div>
+            </main>
+
             <div class="buttons">
                 <button id="start">START</button>
                 <button id="stop">STOP</button>
             </div>
         </div>
+    </div>
 
-        <script src="pomodoro.js">
+    <!-- JS -->
+     <script src="script.js"></script>
+</body>
 
-        </script>
-    </body>
 </html>
