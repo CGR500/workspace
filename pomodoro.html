@@ -17,7 +17,7 @@
                 <li id="pomodoro"><a href="pomodoro.html" target="_blank" rel="noopener">Pomodoro</a></li>
             </ul>
         </nav>
-        
+
     <div id="timer-message">Please select a timer before starting.</div>
 
     <div class="container">
@@ -46,10 +46,12 @@
 
                 </div>
             </main>
-
-            <div class="buttons">
-                <button id="start">START</button>
-                <button id="stop">STOP</button>
+            
+            <div class="buttons">            
+                <audio id="click" src="click.wav"></audio>
+                <button id="start" onclick="document.getElementById('click').play()">START</button>
+                <button id="stop" onclick="document.getElementById('click').play()">STOP</button>
+                <button id="reset" onclick="document.getElementById('click').play()">RESET</button>
             </div>
         </div>
     </div>

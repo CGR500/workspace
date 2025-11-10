@@ -7,6 +7,7 @@ let shortBreak = document.getElementById("short-break")
 let longBreak = document.getElementById("long-break")
 let startBtn = document.getElementById("start")
 let stopBtn = document.getElementById("stop")
+let resetBtn = document.getElementById("reset")
 let timerMsg = document.getElementById("timer-message")
 let button = document.querySelector(".button")
 
@@ -108,6 +109,12 @@ startBtn.addEventListener("click", () => {
 })
 
 stopBtn.addEventListener("click", () => {
+    if(currentTimer) {
+        clearInterval(myInterval)
+    }
+})
+
+resetBtn.addEventListener("click", () => {
     if(currentTimer) {
         clearInterval(myInterval)
     }
