@@ -69,9 +69,9 @@ longBreak.addEventListener("click", () => {
 function startTimer(timerDisplay) {
     if (myInterval) {
         clearInterval(myInterval);
-      }
+    }
 
-      timerDuration = timerDisplay
+    timerDuration = timerDisplay
         .getAttribute("data-duration")
         .split(":")[0];
 
@@ -82,40 +82,43 @@ function startTimer(timerDisplay) {
         const timeRemaining = new Date(endTimestamp - Date.now());
 
         if (timeRemaining <= 0) {
-          clearInterval(myInterval);
-          timerDisplay.textContent = "00:00";
-          const alarm = new Audio(
-            "https://www.freespecialeffects.co.uk/soundfx/scifi/electronic.wav"
-          );
-          alarm.play();
+            clearInterval(myInterval);
+            timerDisplay.textContent = "00:00";
+            const alarm = new Audio(
+                "https://www.freespecialeffects.co.uk/soundfx/scifi/electronic.wav"
+            );
+            alarm.play();
         } else {
-          const minutes = Math.floor(timeRemaining / 60000);
-          const seconds = ((timeRemaining % 60000) / 1000).toFixed(0);
-          const formattedTime = `${minutes}:${seconds
-            .toString()
-            .padStart(2, "0")}`;
-          timerDisplay.textContent = formattedTime;
+            const minutes = Math.floor(timeRemaining / 60000);
+            const seconds = ((timeRemaining % 60000) / 1000).toFixed(0);
+            const formattedTime = `${minutes}:${seconds
+                .toString()
+                .padStart(2, "0")}`;
+            timerDisplay.textContent = formattedTime;
         }
-      }, 1000);
+    }, 1000);
 }
 
 startBtn.addEventListener("click", () => {
     if (currentTimer) {
         startTimer(currentTimer)
         timerMsg.style.display = "none"
+        const alarm = new Audio(
+
+        )
     } else {
         timerMsg.style.display = "block"
     }
 })
 
 stopBtn.addEventListener("click", () => {
-    if(currentTimer) {
+    if (currentTimer) {
         clearInterval(myInterval)
     }
 })
 
 resetBtn.addEventListener("click", () => {
-    if(currentTimer) {
+    if (currentTimer) {
         clearInterval(myInterval)
     }
 })

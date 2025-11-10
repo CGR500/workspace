@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0">
     <title>Pomodoro Timer | Focus</title>
     <link rel="stylesheet" href="pomodoro.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
@@ -11,12 +11,16 @@
 
 <body>
     <nav class="navbar">
-            <ul>
-                <li id="dashboard"><a href="dashboard.html" target="_blank" rel="noopener">Dashboard</a></li>
-                <li id="grades"><a href="grades.html" target="_blank" rel="noopener">Grades</a></li>
-                <li id="pomodoro"><a href="pomodoro.html" target="_blank" rel="noopener">Pomodoro</a></li>
-            </ul>
-        </nav>
+        <ul>
+            <li id="dashboard"><a href="dashboard.html" target="_blank" rel="noopener">Dashboard</a></li>
+            <li id="grades"><a href="grades.html" target="_blank" rel="noopener">Grades</a></li>
+            <li id="pomodoro"><a href="pomodoro.html" target="_blank" rel="noopener">Pomodoro</a></li>
+        </ul>
+    </nav>
+    <audio controls>
+        <source src="click.wav.wav" type="audio/wav">
+        <source src="alert-chime.wav.wav" type="audio/wav">
+    </audio>
 
     <div id="timer-message">Please select a timer before starting.</div>
 
@@ -46,18 +50,19 @@
 
                 </div>
             </main>
-            
-            <div class="buttons">            
-                <audio id="click" src="click.wav"></audio>
+
+            <div class="buttons">
                 <button id="start" onclick="document.getElementById('click').play()">START</button>
                 <button id="stop" onclick="document.getElementById('click').play()">STOP</button>
                 <button id="reset" onclick="document.getElementById('click').play()">RESET</button>
+                <audio id="buttonSound" src="path/to/your/sound.mp3" preload="auto"></audio>
+                <button id="myButton">Click Me!</button>
             </div>
         </div>
     </div>
 
     <!-- JS -->
-     <script src="pomodoro.js"></script>
+    <script src="pomodoro.js"></script>
 </body>
 
 </html>
