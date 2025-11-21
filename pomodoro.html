@@ -17,10 +17,8 @@
             <li id="pomodoro"><a href="pomodoro.html" target="_blank" rel="noopener">Pomodoro</a></li>
         </ul>
     </nav>
-    <audio controls>
-        <source src="click.wav.wav" type="audio/wav">
-        <source src="alert-chime.wav.wav" type="audio/wav">
-    </audio>
+    <audio src="click.wav" type="audio/wav"></audio>
+    <audio src="alert-chime.wav" type="audio/wav"></audio>
 
     <div id="timer-message">Please select a timer before starting.</div>
 
@@ -52,11 +50,9 @@
             </main>
 
             <div class="buttons">
-                <button id="start" onclick="document.getElementById('click').play()">START</button>
-                <button id="stop" onclick="document.getElementById('click').play()">STOP</button>
-                <button id="reset" onclick="document.getElementById('click').play()">RESET</button>
-                <audio id="buttonSound" src="path/to/your/sound.mp3" preload="auto"></audio>
-                <button id="myButton">Click Me!</button>
+                <button id="start" onclick="document.getElementById('click.wav').play()">START</button>
+                <button id="pause" onclick="document.getElementById('click.wav').play()">PAUSE</button>
+                <button id="reset" type="reset" onclick="document.getElementById('click.wav').play()">RESET</button>
             </div>
         </div>
     </div>

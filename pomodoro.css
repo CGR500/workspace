@@ -142,7 +142,7 @@ h1 {
 }
 
 #start,
-#stop,
+#pause,
 #reset {
     background-color: #7c3f00;
     color: #fff;
@@ -154,7 +154,7 @@ h1 {
     transition: all .2s ease-in;
 }
 
-#stop:hover {
+#pause:hover {
     background-color: tomato;
 }
 

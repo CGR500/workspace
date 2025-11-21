@@ -6,11 +6,12 @@ let session = document.getElementById("pomodoro-session")
 let shortBreak = document.getElementById("short-break")
 let longBreak = document.getElementById("long-break")
 let startBtn = document.getElementById("start")
-let stopBtn = document.getElementById("stop")
+let pauseBtn = document.getElementById("pause")
 let resetBtn = document.getElementById("reset")
 let timerMsg = document.getElementById("timer-message")
 let button = document.querySelector(".button")
 
+let isPaused = false
 let currentTimer = null
 let myInterval = null
 
@@ -29,10 +30,19 @@ function hideAll() {
     ))
 }
 
+function showCurrentTimer() {
+    timers.forEach((timer) => (
+        currentTimer.style.display = "block"
+    ))
+}
+
 session.addEventListener("click", () => {
     hideAll()
 
     pomodoro.style.display = "block"
+
+    var snd = new Audio("click.wav");
+    snd.play();
 
     session.classList.add("active")
     shortBreak.classList.remove("active")
@@ -46,6 +56,9 @@ shortBreak.addEventListener("click", () => {
 
     short.style.display = "block"
 
+    var snd = new Audio("click.wav");
+    snd.play();
+
     session.classList.remove("active")
     shortBreak.classList.add("active")
     longBreak.classList.remove("active")
@@ -57,6 +70,9 @@ longBreak.addEventListener("click", () => {
     hideAll()
 
     long.style.display = "block"
+
+    var snd = new Audio("click.wav");
+    snd.play();
 
     session.classList.remove("active")
     shortBreak.classList.remove("active")
@@ -85,7 +101,7 @@ function startTimer(timerDisplay) {
             clearInterval(myInterval);
             timerDisplay.textContent = "00:00";
             const alarm = new Audio(
-                "https://www.freespecialeffects.co.uk/soundfx/scifi/electronic.wav"
+                "done-bells.wav"
             );
             alarm.play();
         } else {
@@ -103,22 +119,37 @@ startBtn.addEventListener("click", () => {
     if (currentTimer) {
         startTimer(currentTimer)
         timerMsg.style.display = "none"
-        const alarm = new Audio(
-
-        )
+        var snd = new Audio("click.wav");
+        snd.play();
     } else {
         timerMsg.style.display = "block"
+        var snd = new Audio("alert.wav");
+        snd.play();
     }
 })
 
-stopBtn.addEventListener("click", () => {
+function pauseTimer() {
+    clearInterval(timerInterval);
+    isPaused = true;
+}
+
+pauseBtn.addEventListener("click", () => {
     if (currentTimer) {
         clearInterval(myInterval)
+        var snd = new Audio("click.wav");
+        snd.play();
+    }
+    else {
+        pauseTimer()
     }
 })
 
 resetBtn.addEventListener("click", () => {
     if (currentTimer) {
         clearInterval(myInterval)
+        const reset = document.getElementById("reset");
+        reset.reset();
+        var snd = new Audio("click.wav");
+        snd.play();
     }
 })
