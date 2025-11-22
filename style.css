@@ -1,3 +1,5 @@
+/* Navigation bar */
+
 .navbar{
     position: sticky;
     top: 0;
@@ -31,10 +33,11 @@
     float: left;
 }
 
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #fcf3e9;
+#manage{
+    float: right;
 }
+
+/* Top of the page */
 
 img{
     width: 200px;
@@ -51,6 +54,13 @@ h2{
     text-align: center;
 }
 
+/* Body of the page */
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fcf3e9;
+}
+
 h3{
     font-weight: bold;
     color: #5A4D41;
@@ -65,7 +75,7 @@ h3{
     text-decoration: underline;
 }
 
-/* "Most Used" links */
+/* Most Used links */
 
 #classlink{
     margin-top: 5px;
@@ -95,7 +105,27 @@ h3{
     margin-top: 5px;
 }
 
-/* "Courses" links */
+a[href="https://monkeytype.com/#google_vignette"]{
+    color: blue;
+}
+
+a[href="https://www.desmos.com/scientific"]{
+    color: blue;
+}
+
+a[href="https://www.desmos.com/calculator"]{
+    color: blue;
+}
+
+a[href="https://www.spanishdict.com/"]{
+    color: blue;
+}
+
+a[href="https://www.spanishdict.com/answers/282262/how-to-type-spanish-letters-and-accents-from-paralee"]{
+    color: blue;
+}
+
+/* Courses links */
 
 #history{
     margin-top: 5px;
@@ -153,38 +183,12 @@ a[href="https://fultonvirtual.instructure.com/courses/973/modules"]{
     color: blue;
 }
 
-a[href="https://monkeytype.com/#google_vignette"]{
-    color: blue;
-}
-
-a[href="https://www.desmos.com/scientific"]{
-    color: blue;
-}
-
-a[href="https://www.desmos.com/calculator"]{
-    color: blue;
-}
-
-a[href="https://www.spanishdict.com/"]{
-    color: blue;
-}
-
-a[href="https://www.spanishdict.com/answers/282262/how-to-type-spanish-letters-and-accents-from-paralee"]{
-    color: blue;
-}
+/* Footer */
 
 footer{
     background-color: #7c3f00;
     color: white;
     padding: 15px;
     margin-bottom: 0px;
-}
-
-.manage{
-    color: royalblue;
-    text-decoration: none;
-}
-
-.manage:hover{
-    text-decoration: underline;
+    text-align: center;
 }

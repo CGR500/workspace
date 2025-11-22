@@ -7,6 +7,13 @@
     font-family: 'Poppins', sans-serif;
 }
 
+/* Navigation bar */
+
+.navbar{
+    position: sticky;
+    top: 0;
+}
+
 .navbar ul {
     list-style-type: none;
     background-color: #7c3f00;
@@ -36,11 +43,18 @@
     float: left;
 }
 
+#manage{
+    float: right;
+}
+
+/* Body of the page */
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #fcf3e9;
 }
 
+/* Timer */
 .container {
     text-align: center;
     width: 100%;
@@ -66,12 +80,6 @@ main {
 h1 {
     font-size: 2rem;
     margin: 20px auto;
-}
-
-.button-container {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
 }
 
 .pomodoro {
@@ -104,6 +112,18 @@ h1 {
     color: #ffe6eb;
 }
 
+.hidden {
+    display: flex;
+}
+
+.timer-display {
+    font-size: 5rem;
+    margin-top: 20px;
+    font-weight: bold;
+    color: #ffe6eb;
+}
+
+/* Buttons */
 .button-container {
     margin-top: 20px;
     display: flex;
@@ -124,17 +144,6 @@ h1 {
 .button.active,
 .button:hover {
     background-color: #633200;
-}
-
-.hidden {
-    display: flex;
-}
-
-.timer-display {
-    font-size: 5rem;
-    margin-top: 20px;
-    font-weight: bold;
-    color: #ffe6eb;
 }
 
 .buttons {
@@ -166,6 +175,7 @@ h1 {
     background-color: royalblue;
 }
 
+/* Select alert */
 #timer-message {
     color: white;
     background-color: tomato;
@@ -186,4 +196,17 @@ h1 {
     .timer {
         width: 500px;
     }
+}
+
+/* Footer */
+
+footer{
+    background-color: #7c3f00;
+    color: white;
+    padding: 15px;
+    margin-bottom: 8px;
+    margin-left: 8px;
+    margin-right: 8px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
