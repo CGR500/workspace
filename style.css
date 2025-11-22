@@ -51,6 +51,12 @@ h3{
     color: #5A4D41;
 }
 
+.links a{
+    text-decoration: none;
+}
+
+/* "Most Used" links */
+
 #classlink{
     margin-top: 5px;
 }
@@ -70,6 +76,16 @@ h3{
 #graphing{
     margin-top: 5px;
 }
+
+#dict{
+    margin-top: 5px;
+}
+
+#char{
+    margin-top: 5px;
+}
+
+/* "Courses" links */
 
 #history{
     margin-top: 5px;
@@ -136,5 +152,13 @@ a[href="https://www.desmos.com/scientific"]{
 }
 
 a[href="https://www.desmos.com/calculator"]{
+    color: blue;
+}
+
+a[href="https://www.spanishdict.com/"]{
+    color: blue;
+}
+
+a[href="https://www.spanishdict.com/answers/282262/how-to-type-spanish-letters-and-accents-from-paralee"]{
     color: blue;
 }
