@@ -105,6 +105,14 @@ h3{
     margin-top: 5px;
 }
 
+a[href="https://myapps.classlink.com/home"]{
+    color: blue;
+}
+
+a[href="https://fultonschools.class.com/teams"]{
+    color: blue;
+}
+
 a[href="https://monkeytype.com/#google_vignette"]{
     color: blue;
 }
@@ -149,14 +157,6 @@ a[href="https://www.spanishdict.com/answers/282262/how-to-type-spanish-letters-a
 
 #ghealth{
     margin-top: 5px;
-}
-
-a[href="https://myapps.classlink.com/home"]{
-    color: blue;
-}
-
-a[href="https://fultonschools.class.com/teams"]{
-    color: blue;
 }
 
 a[href="https://fultonschools.instructure.com/courses/470167/modules"]{
