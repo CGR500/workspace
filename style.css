@@ -69,6 +69,7 @@ h3{
 /* All links */
 .links a{
     text-decoration: none;
+    color: blue;
 }
 
 .links a:hover{
