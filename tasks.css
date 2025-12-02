@@ -65,3 +65,18 @@ h3{
     font-weight: bold;
     color: #5A4D41;
 }
+
+/* Footer */
+
+footer{
+    background-color: #7c3f00;
+    color: white;
+    padding: 15px;
+    margin-bottom: 0px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
