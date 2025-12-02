@@ -1,3 +1,10 @@
+/* Navigation bar */
+
+.navbar{
+    position: sticky;
+    top: 0;
+}
+
 .navbar ul{
     list-style-type: none;
     background-color: #7c3f00;
@@ -26,10 +33,11 @@
     float: left;
 }
 
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #fcf3e9;
+#manage{
+    float: right;
 }
+
+/* Top of the page */
 
 img{
     width: 200px;
@@ -44,4 +52,16 @@ img{
 
 h2{
     text-align: center;
+}
+
+/* Body of the page */
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fcf3e9;
+}
+
+h3{
+    font-weight: bold;
+    color: #5A4D41;
 }
