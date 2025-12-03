@@ -5,7 +5,8 @@
         <meta name="viewport" content="width=deivce-width, initial-scale=1.0">
         <link rel="stylesheet" href="tasks.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-        <title>Dashbaord</title>
+        <title>Tasks</title>
+        <link rel="icon" type="image/png" href="coffee-cup.png">
     </head>
     <body>
         <nav class="navbar">
@@ -17,8 +18,29 @@
                 <li id="manage"><a href="https://github.com/CGR500/workspace/settings/pages" target="_blank" rel="noopener"><i class="bi bi-gear-wide-connected"></i> Manage Site</a></li>
             </ul>
         </nav>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcP3ZKYsdMUQ1jv_fKy0xemBdE5PKJFFE4Qw&s" alt="aesthetic girl studying">
+        <img src="data:image/png;base64,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" alt="ckecklist icon">
+        
         <h2>Welcome to Your Tasks!</h2>
+
+        <form class="tasks">
+            <label for="textInput">Assignment:</label>
+            <input type="text" id="textInput"><br><br>
+            
+            <label for="urlInput">URL:</label>
+            <input type="text" id="urlInput"><br><br>
+            
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject"><br><br>
+            
+        <button onclick="createHyperlink()">Create Link</button>
+
+        <div id="linkDisplay">
+            <!-- The generated hyperlink will appear here -->
+        </div>
+
+        <script src="tasks.js"></script>
+        </form>
+
     </body>
     
     <footer>
