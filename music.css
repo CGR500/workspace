@@ -11,7 +11,7 @@
     padding: 0px;
     margin: 0px;
     margin-bottom: 10px;
-    overflow-x: scroll;
+    overflow: hidden;
     font-size: 20px;
     font-weight: bold;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -66,12 +66,19 @@ h3{
     color: #5A4D41;
 }
 
-/* Tasks */
-.tasks{
-    display: block;
-
+/* All links */
+.links a{
+    text-decoration: none;
+    color: blue;
 }
 
+.links a:hover{
+    text-decoration: underline;
+}
+
+.links li{
+    margin-top: 5px;
+}
 /* Footer */
 
 footer{
